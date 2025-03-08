@@ -1,0 +1,34 @@
+.cat-table {
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+
+.spin-hidden-text {
+    display: none;
+}
+
+.codespace-cat-img:hover {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.codespace-cat-img:hover + .spin-hidden-text {
+    display: inline-block;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
