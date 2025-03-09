@@ -2,6 +2,10 @@
     margin-bottom: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }  
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: whitesmoke;
@@ -75,6 +79,7 @@ body {
 /*Animate the money bag, coins, and gavel to look like a sale has happend*/
 .money-container {
     display: inline-block;
+    position: absolute;
 }
 
 .coins {
@@ -117,5 +122,27 @@ td {
     vertical-align: middle;
 }
 
+/*Style the text to make it more visible with the new background vid*/
 
+th {
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: black;
+}
+
+.background-cat-vid {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.table-data-text {
+    background-color: aliceblue;
+    border-radius: 15px;
+    color: black;
+}
   
